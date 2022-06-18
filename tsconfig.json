@@ -6,7 +6,17 @@
       "rootDir": "./",
       "outDir": "dist",
       "esModuleInterop": true,
+      "moduleResolution": "node",
       "strict": true,
       "lib": ["esnext"],
-    }
+      "baseUrl": ".",
+      "paths": {
+        "*": [
+          "node_modules/*"
+        ]
+      }
+    },
+    "include": [
+      "src/**/*"
+    ]
   }
